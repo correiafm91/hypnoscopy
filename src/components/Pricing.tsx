@@ -4,7 +4,7 @@ const Pricing = () => {
   return (
     <section className="py-20 px-4">
       <h2 className="heading-3d text-3xl md:text-5xl text-center mb-16">
-        O QUE EU VOU COBRAR DE VOCÊ?
+        O QUE VAMOS COBRAR DE VOCÊ?
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
         <div className="glass-card p-8 flex flex-col items-center animate-fade-in">

@@ -14,7 +14,7 @@ const Company = () => {
           </div>
           <div className="flex-1">
             <h2 className="heading-3d text-3xl md:text-4xl text-left mb-8">
-              HYPNOS – A Copywriting que Transforma Palavras em Dinheiro
+              HYPNOS – A Empresa que Transforma Palavras em Dinheiro
             </h2>
             <div className="space-y-6 text-lg text-white/90">
               <p className="text-left">
