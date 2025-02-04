@@ -1,12 +1,57 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import React, { useState, useEffect } from 'react';
+import Hero from '../components/Hero';
+import Results from '../components/Results';
+import Process from '../components/Process';
+import Pricing from '../components/Pricing';
+import CTAButton from '../components/CTAButton';
+import FormModal from '../components/FormModal';
 
 const Index = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  useEffect(() => {
+    if (isModalOpen) {
+      const script = document.createElement('script');
+      script.src = 'https://embed.respondi.app/embed.js';
+      script.async = true;
+      script.id = 'respondi_src';
+      document.body.appendChild(script);
+
+      return () => {
+        const existingScript = document.getElementById('respondi_src');
+        if (existingScript) {
+          existingScript.remove();
+        }
+      };
+    }
+  }, [isModalOpen]);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+    document.body.style.overflow = 'hidden';
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    document.body.style.overflow = 'unset';
+  };
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
+    <div className="min-h-screen bg-dark">
+      <Hero />
+      <div className="flex justify-center mb-20">
+        <CTAButton onClick={openModal}>Fechar negócio</CTAButton>
       </div>
+      <Results />
+      <div className="flex justify-center mb-20">
+        <CTAButton onClick={openModal}>AGORA ESTOU CONVENCIDO</CTAButton>
+      </div>
+      <Process />
+      <Pricing />
+      <div className="flex justify-center py-20">
+        <CTAButton onClick={openModal}>Fechar negócio</CTAButton>
+      </div>
+      <FormModal isOpen={isModalOpen} onClose={closeModal} />
     </div>
   );
 };
