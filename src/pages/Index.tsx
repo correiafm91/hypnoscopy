@@ -43,8 +43,8 @@ const Index = () => {
       <div className="flex justify-center mb-20">
         <CTAButton onClick={openModal}>Fechar negócio</CTAButton>
       </div>
-      <Company />
       <Results />
+      <Company />
       <div className="flex justify-center mb-20">
         <CTAButton onClick={openModal}>AGORA ESTOU CONVENCIDO</CTAButton>
       </div>
