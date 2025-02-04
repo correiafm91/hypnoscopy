@@ -29,8 +29,8 @@ export default {
           hover: "#ff5a1f",
         },
         dark: {
-          DEFAULT: "#373737",
-          lighter: "#444444",
+          DEFAULT: "#232323",
+          lighter: "#2d2d2d",
         },
       },
       keyframes: {
