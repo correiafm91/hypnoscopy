@@ -3,6 +3,7 @@ import Hero from '../components/Hero';
 import Results from '../components/Results';
 import Process from '../components/Process';
 import Pricing from '../components/Pricing';
+import Company from '../components/Company';
 import CTAButton from '../components/CTAButton';
 import FormModal from '../components/FormModal';
 
@@ -42,6 +43,7 @@ const Index = () => {
       <div className="flex justify-center mb-20">
         <CTAButton onClick={openModal}>Fechar negócio</CTAButton>
       </div>
+      <Company />
       <Results />
       <div className="flex justify-center mb-20">
         <CTAButton onClick={openModal}>AGORA ESTOU CONVENCIDO</CTAButton>
