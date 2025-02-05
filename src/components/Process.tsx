@@ -7,7 +7,8 @@ const Process = () => {
     "Rascunhos de textos",
     "Finalização dos textos e revisão",
     "Aprovação do cliente",
-    "Entrega final do documento com os textos"
+    "Entrega final do documento com os textos",
+    "Treinamentos"
   ];
 
   return (
