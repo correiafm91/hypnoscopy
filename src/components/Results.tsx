@@ -9,8 +9,8 @@ const Results = () => {
 
   return (
     <section className="py-20 px-4">
-      <h2 className="heading-3d text-3xl md:text-5xl text-center mb-16 animate-fade-in-blur">
-        AINDA NÃO ESTÁ CONVENCIDO? ÓTIMO, POR QUE QUEREMOS TE MOSTRAR MAIS COISAS
+      <h2 className="heading-3d text-3xl md:text-5xl text-center mb-8 animate-fade-in-blur">
+        ANTES DE MOSTRARMOS O BOTÃO DE "NEGÓCIO FECHADO", QUEREMOS TE APRESENTAR MAIS COISAS
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-8">
         {images.map((src, index) => (

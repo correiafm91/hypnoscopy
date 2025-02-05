@@ -45,9 +45,6 @@ const Index = () => {
       </div>
       <Results />
       <Company />
-      <div className="flex justify-center mb-20">
-        <CTAButton onClick={openModal}>AGORA ESTOU CONVENCIDO</CTAButton>
-      </div>
       <Process />
       <Pricing />
       <div className="flex justify-center py-20">
