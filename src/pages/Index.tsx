@@ -40,9 +40,6 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-dark">
       <Hero />
-      <div className="flex justify-center mb-20">
-        <CTAButton onClick={openModal}>Fechar negócio</CTAButton>
-      </div>
       <Results />
       <Company />
       <Process />
