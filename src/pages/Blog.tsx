@@ -3,7 +3,7 @@ import React from 'react';
 import { useQuery } from '@tanstack/react-query';
 import { supabase } from '@/integrations/supabase/client';
 import { Link } from 'react-router-dom';
-import { format } from 'date-fns';
+import { format, parseISO } from 'date-fns';
 import { Loader2 } from 'lucide-react';
 
 const Blog = () => {
@@ -48,7 +48,7 @@ const Blog = () => {
               className="block p-6 rounded-lg bg-white/5 hover:bg-white/10 transition-colors"
             >
               <div className="mb-2 text-sm text-white/60">
-                {format(new Date(post.published_at), 'dd/MM/yyyy')}
+                {format(parseISO(post.published_at), 'dd/MM/yyyy')}
               </div>
               <h2 className="text-2xl font-semibold mb-3">{post.title}</h2>
               <p className="text-white/80">{post.excerpt}</p>

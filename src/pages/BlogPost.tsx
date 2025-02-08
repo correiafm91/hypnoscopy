@@ -3,7 +3,7 @@ import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { useQuery } from '@tanstack/react-query';
 import { supabase } from '@/integrations/supabase/client';
-import { format } from 'date-fns';
+import { format, parseISO } from 'date-fns';
 import { Loader2 } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';
 
@@ -59,7 +59,7 @@ const BlogPost = () => {
         </Link>
         <article>
           <div className="mb-2 text-sm text-white/60">
-            {format(new Date(post.published_at), 'dd/MM/yyyy')}
+            {format(parseISO(post.published_at), 'dd/MM/yyyy')}
           </div>
           <h1 className="text-4xl font-bold mb-8">{post.title}</h1>
           <div className="prose prose-invert max-w-none">
