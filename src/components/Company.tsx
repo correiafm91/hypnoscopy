@@ -8,7 +8,7 @@ const Company = () => {
         <div className="flex flex-col md:flex-row items-start gap-8 mb-12">
           <div className="w-32 h-32 md:w-48 md:h-48 flex-shrink-0 mx-auto md:mx-0">
             <img
-              src="https://i.postimg.cc/xdyDbMHR/Minimalist-Hypnos-copywriting-logo-geometric-white-shape-on-black-background-High-contrast-stron.jpg"
+              src="https://i.postimg.cc/Dz2xSCGy/Minimalist-Hypnos-copywriting-logo-geometric-white-shape-on-black-background-High-contrast-stron.png"
               alt="Hypnos Logo"
               className="w-full h-full object-contain"
             />
