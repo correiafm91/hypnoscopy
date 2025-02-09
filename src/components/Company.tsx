@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 const Company = () => {
@@ -7,7 +8,7 @@ const Company = () => {
         <div className="flex flex-col md:flex-row items-start gap-8 mb-12">
           <div className="w-32 h-32 md:w-48 md:h-48 flex-shrink-0 mx-auto md:mx-0">
             <img
-              src="/lovable-uploads/ecfcb3d3-4fbb-4846-bf4e-d745021664b1.png"
+              src="https://i.postimg.cc/xdyDbMHR/Minimalist-Hypnos-copywriting-logo-geometric-white-shape-on-black-background-High-contrast-stron.jpg"
               alt="Hypnos Logo"
               className="w-full h-full object-contain"
             />
