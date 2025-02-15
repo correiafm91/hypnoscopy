@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
 @tailwind base;
@@ -5,10 +6,10 @@
 @tailwind utilities;
 
 :root {
-  --background: 0 0% 7%;
+  --background: 240 10% 9%;
   --foreground: 0 0% 100%;
-  --border: 0 0% 14.9%;
-  --input: 0 0% 14.9%;
+  --border: 231 19% 22%;
+  --input: 231 19% 22%;
   --ring: 0 0% 83.9%;
 }
 
@@ -29,11 +30,11 @@
 
 @layer components {
   .glass-card {
-    @apply backdrop-blur-lg bg-white/5 border border-white/10 rounded-2xl;
+    @apply backdrop-blur-lg bg-dark-lighter/30 border border-white/10 rounded-2xl;
   }
   
   .heading-3d {
-    @apply font-extrabold text-white;
+    @apply font-extrabold text-peach;
     text-shadow: 0 1px 0 rgb(255 255 255 / 0.4),
                  0 2px 0 rgb(255 255 255 / 0.3),
                  0 3px 0 rgb(255 255 255 / 0.2),
@@ -41,7 +42,7 @@
   }
   
   .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-white via-white/90 to-white/80;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-peach via-primary to-primary/80;
   }
 }
 

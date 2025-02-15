@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -25,13 +26,14 @@ export default {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "#FF3F00",
-          hover: "#ff5a1f",
+          DEFAULT: "#e89b46",
+          hover: "#f0a755",
         },
         dark: {
-          DEFAULT: "#232323",
-          lighter: "#2d2d2d",
+          DEFAULT: "#17161c",
+          lighter: "#2f3241",
         },
+        peach: "#ffa7b5",
       },
       keyframes: {
         "accordion-down": {
